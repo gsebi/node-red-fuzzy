@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iqhomedata',{
+        category: 'IQ Home Gateway',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"IQ Home Sensor Values";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="iqhomedata">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="iqhomedata">
+    <p>A simple node that converts incoming message into measured values.</p>
+</script>
