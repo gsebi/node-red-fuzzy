@@ -1,7 +1,7 @@
 <script type="text/javascript">
-    RED.nodes.registerType('iqhomedata',{
-        category: 'IQ Home Gateway',
-        color: '#C0DEED',
+    RED.nodes.registerType('not',{
+        category: 'Fuzzy Logic',
+        color: '#C7E9C0',
         defaults: {
             name: {value:""}
         },
@@ -9,18 +9,18 @@
         outputs:1,
         icon: "function.png",
         label: function() {
-            return this.name||"IQ Home Sensor Values";
+            return this.name||"not";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="iqhomedata">
+<script type="text/x-red" data-template-name="not">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="iqhomedata">
+<script type="text/x-red" data-help-name="not">
     <p>A simple node that converts incoming message into measured values.</p>
 </script>

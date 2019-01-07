@@ -1,16 +1,22 @@
 {
-  "name": "iqhomedata",
-  "version": "0.0.0",
+  "name": "fuzzy",
+  "version": "0.0.1",
   "description": "",
-  "main": "iqhome.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "node-red" : {
-        "nodes": {
-            "iqhomedata": "iqhome.js"
+        "nodes": {   
+            "grade": "membership/grade.js",           
+            "reverse_grade": "membership/reverse_grade.js",        
+            "triangle": "membership/triangle.js",           
+            "trapezoid": "membership/trapezoid.js",      
+            "and": "rule/and.js",            
+            "or": "rule/or.js",      
+            "aggregation": "output/aggregation.js",            
+            "outmf": "output/outmf.js"
         }
     }
 }
